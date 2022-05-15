@@ -1,6 +1,5 @@
 import React from "react";
 import { connect } from 'react-redux';
-// import Dashboard from "./dashboard";
 import LogIn from "./login";
 import  DashboardContent  from "../firstpage/Dashboard";
 

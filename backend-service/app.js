@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const MongoDBStore = require("connect-mongodb-session")(session);
 
 const userRoutes = require("./routes/user-route");
-const connectionUrl = "Loda Bhenchod";
+const connectionUrl = "mongodb://localhost:27017";
 
 const app = express();
 app.use(function (req, res, next) {
