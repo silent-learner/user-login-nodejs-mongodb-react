@@ -4,7 +4,7 @@ let cancel;
 let urlForCancel;
 //axios.defaults.withCredentials = false;
 
-export const API_URL = "http://192.168.43.167:5000";
+export const API_URL = "http://localhost:5000";
 export function post(url, params, extraParam = {}) {
    cancel && urlForCancel === url && cancel();
    // cancel() cancels the old request if the executor have same request.

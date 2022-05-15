@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from 'react-redux';
-import Dashboard from "./dashboard";
+// import Dashboard from "./dashboard";
 import LogIn from "./login";
+import  DashboardContent  from "../firstpage/Dashboard";
 
 class Layout extends React.Component {   
    constructor(props) {
@@ -13,7 +14,7 @@ class Layout extends React.Component {
       //console.log(this.props.isAuthorized);
       return (
          this.props.isAuthorized  ? 
-         <Dashboard isAuthorized={this.props.isAuthorized}/> :       
+         <DashboardContent isAuthorized={this.props.isAuthorized}/> :       
          <LogIn />
       );   
    }
